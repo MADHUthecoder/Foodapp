@@ -11,9 +11,9 @@ function Navbar() {
         <h1 className='text-3xl px-10'>
             Eat <span className='font-bold'>Best Foods</span>
         </h1>
-        <div className='flex items-center bg-yellow-300 rounded-2xl'>
-            <p className='p-2 bg-yellow-950 text-yellow-300 rounded-2xl'>Pickup</p>
-            <p className='p-2 rounded-2xl'>Delivery</p>
+        <div className='flex items-center bg-yellow-900 rounded-2xl'>
+            <p className='p-2 text-yellow-300 bg-yellow-900 rounded-2xl font-bold'>Pickup</p>
+            <p className='p-2 rounded-2xl font-bold bg-yellow-500 text-yellow-900'>Delivery</p>
         </div>
       </div>
       <div className='flex w-[300px] justify-evenly'>
@@ -22,6 +22,7 @@ function Navbar() {
         <CgProfile size={30}/>
        </div>
     </div>
+    
     </>
   )
 }
