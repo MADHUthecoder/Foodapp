@@ -5,7 +5,7 @@ import { CgProfile } from "react-icons/cg";
 function Navbar() {
   return (
     <>
-    <div className='max-w-[1640px] mx-auto flex justify-between items-center p-4 bg-yellow-200'>
+    <div className='mx-auto flex justify-between items-center p-4 bg-yellow-200'>
       <div className='flex items-center'>
       <AiOutlineMenu size={20} />
         <h1 className='text-3xl px-10'>
