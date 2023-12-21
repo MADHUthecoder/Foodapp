@@ -18,7 +18,7 @@ function Navbar() {
       </div>
       <div className='flex w-[300px] justify-evenly'>
         <input type='text' placeholder='Enter food' className='bg-gray-100 rounded-xl drop-shadow-md px-2'></input>
-        <AiOutlineSearch size={20} className='justify-center'/>
+        <AiOutlineSearch size={30} className='justify-center'/>
         <CgProfile size={30}/>
        </div>
     </div>
