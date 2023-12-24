@@ -4,7 +4,9 @@ module.exports = {
   theme: {
     extend: {fontFamily:{
       'primary': ['Berkshire Swash'],
-      'secondary': ['Carattere']
+      'secondary': ['Carattere'],
+      'tertiary': ['Carter One'],
+      'title': ['Passion One']
     },
   },
   plugins: [],

@@ -2,6 +2,8 @@ import React from 'react'
 import {AiOutlineMenu, AiOutlineSearch} from "react-icons/ai"
 import { CgProfile } from "react-icons/cg";
 import { Link } from 'react-router-dom';
+import { TbFilterStar } from "react-icons/tb";
+
 
 function Navbar() {
   return (
@@ -17,7 +19,9 @@ function Navbar() {
             <Link to='/delivery' className='p-2 rounded-2xl font-bold bg-orange-500 text-white'>Delivery</Link>
         </div>
       </div>
-      <div className='flex w-[300px] justify-evenly'>
+  
+      <div className='flex w-[350px] justify-evenly'>
+        <div><TbFilterStar size={30}/></div>
         <input type='text' placeholder='Enter food' className='bg-gray-100 rounded-xl drop-shadow-md px-2'></input>
         <AiOutlineSearch size={30} className='justify-center'/>
         <CgProfile size={30}/>
