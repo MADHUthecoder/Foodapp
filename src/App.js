@@ -1,12 +1,23 @@
-import Navbar from './components/Navbar';
-import Home from './components/Home'
 import './App.css';
+import './index.css';
+import { Routes, Route,} from "react-router-dom";
+import Pages from './pages/Page';
+import Dining from './pages/Dining';
+import Delivery from './pages/Delivery';
+import Navbar from './components/Navbar';
+
 
 function App() {
   return (
     <div>
-      <Navbar/>
-      <Home />
+      <Navbar />
+      <Routes>
+          <Route path='/' element={<Pages />} />
+          <Route path="/dining" element={<Dining />} />
+          <Route path="/delivery" element={<Delivery />} />
+
+  
+      </Routes>
     </div>
   );
 }

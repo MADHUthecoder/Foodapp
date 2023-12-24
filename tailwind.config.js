@@ -2,8 +2,12 @@
 module.exports = {
   content: ["./src/**/*.{html,jsx,tsx,js}"],
   theme: {
-    extend: {},
+    extend: {fontFamily:{
+      'primary': ['Berkshire Swash'],
+      'secondary': ['Carattere']
+    },
   },
   plugins: [],
+}
 }
 
