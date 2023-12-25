@@ -7,6 +7,7 @@ import { TbFilterStar } from "react-icons/tb";
 
 function Navbar() {
   const [filterPop, setFilterPop] = useState(false);
+  const [profilePop, setProfilePop] = useState(false);
   return (
     <>
     {
@@ -26,6 +27,8 @@ function Navbar() {
         
       </div>
     }
+
+    
     <div className='mx-auto flex justify-between items-center p-4 bg-white '>
 
       <div className='flex items-center'>
@@ -43,7 +46,17 @@ function Navbar() {
         <div onClick={() => setFilterPop(true)}><TbFilterStar size={30}/></div>
         <input type='text' placeholder='Enter food' className='bg-gray-100 rounded-xl drop-shadow-md px-2'></input>
         <AiOutlineSearch size={30} className='justify-center'/>
-        <CgProfile size={30}/>
+        <CgProfile onClick={() => setProfilePop(true)} size={30}/>
+        {
+      profilePop &&
+      <div className='bg-slate-400 absolute right-0 mt-8 h-[300px] w-[200px]'>
+        <div className='flex flex-col items-center justify-center h-full'>
+        <button>Login</button>
+        <p>OR</p>
+        <button>Signup</button>
+        </div>
+      </div>
+    }
        </div>
     </div>
     
