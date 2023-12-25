@@ -9,7 +9,7 @@ import Navbar from './components/Navbar';
 
 function App() {
   return (
-    <div className='bg-[#fff0d4] h-[637px] '>
+    <div className='bg-[#fff0d4] h-full'>
       <Navbar />
       <Routes>
           <Route path='/' element={<Pages />} />
