@@ -12,15 +12,20 @@ function Navbar() {
     <>
     {
       filterPop &&
-      <div className='bg-slate-300/50 w-full h-full fixed top-0 left-0 flex items-center justify-center'>
-        <div className='w-[600px] h-[277px] bg-slate-400 flex flex-col items-center justify-center'>
+      <div className='bg-slate-200 w-full h-full fixed top-0 left-0 flex items-center justify-center'>
+        <div className='w-[200px] h-[200px] bg-slate-400 flex flex-col items-center justify-center'>
           <h1 className='cursor-pointer' onClick={() => setFilterPop(false)}>Close</h1>
-        <div className='flex'>
-        <label className='text-white' htmlFor="">Loaction</label>
-        <select name="location" placeholder="Loaction" id="">
+        <div className='flex flex-col'>
+        <label className='text-white' htmlFor="">Location</label>
+        <select name="location" placeholder="Location" id="">
+          <option value="">Banglore</option>
           <option value="">Chennai</option>
+          <option value="">Coimbatore</option>
+          <option value="">Dindigul</option>
           <option value="">Salem</option>
-          <option value="">Pondy</option>
+          <option value="">Pondicherry</option>
+          <option value="">Trichy</option>
+          <option value="">Madurai</option>
         </select>
         </div>
         </div>

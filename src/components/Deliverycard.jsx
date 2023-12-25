@@ -4,7 +4,7 @@ import restoimg from "../images/restoimg.jpg";
 
 const DeliveryDetails=(resto)=>{
     return(
-        <div className='bg-gray-100 m-5 p-5'>
+        <div className='bg-[#f7f7ff] rounded-2xl drop-shadow-xl m-5 p-5'>
             <div className='px-[50px] pt-5 flex flex-col justify-center items-center'>
                 <img src={restoimg} alt='restoimg' width={250}/>
                 <div className='py-2 items-center flex flex-row'> 
