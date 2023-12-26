@@ -12,12 +12,13 @@ function Navbar() {
     <>
     {
       filterPop &&
-      <div className='bg-slate-200 w-full h-full fixed top-0 left-0 flex items-center justify-center'>
-        <div className='w-[200px] h-[200px] bg-slate-400 flex flex-col items-center justify-center'>
-          <h1 className='cursor-pointer' onClick={() => setFilterPop(false)}>Close</h1>
-        <div className='flex flex-col'>
-        <label className='text-white' htmlFor="">Location</label>
-        <select name="location" placeholder="Location" id="">
+      <div className='bg-[#000000]/60 z-10 w-full h-full fixed top-0 left-0 flex items-center justify-center'>
+        <div className='w-[200px] h-[300px] bg-[#f2d0a4] rounded-3xl flex flex-col items-center justify-center border-2 border-slate-600'>
+          <h1 className='cursor-pointer underline hover:text-red-500 flex py-0 px-3' onClick={() => setFilterPop(false)}>Close</h1>
+        <div className='flex flex-col items-center'>
+        <label className='text-[#d84242] font-bold'>Location</label>
+        <select name="location" placeholder="Location" >
+        <option value="">Select Location</option>
           <option value="">Banglore</option>
           <option value="">Chennai</option>
           <option value="">Coimbatore</option>
@@ -28,6 +29,17 @@ function Navbar() {
           <option value="">Madurai</option>
         </select>
         </div>
+        
+        <div className='flex flex-col'>
+        <label className='text-[#d84242] font-bold'>Meal type</label>
+          <div><input type="checkbox" name="meal" value="Veg" />
+          <label for="Veg">Veg</label></div>
+          <div><input type="checkbox" name="meal" value="NonVeg" />
+          <label for="NonVeg">Non-Veg</label></div>
+        </div>
+        <button type='submit' className='flex items-center justify-center bg-orange-400 hover:bg-orange-900 text-white py-2 px-4 rounded h-8 w-[100px]'>
+          Submit
+        </button>
         </div>
         
       </div>
@@ -54,11 +66,11 @@ function Navbar() {
         <CgProfile onClick={() => setProfilePop(true)} size={30}/>
         {
       profilePop &&
-      <div className='bg-slate-400 absolute right-0 mt-8 h-[300px] w-[200px]'>
+      <div className='bg-[#000000]/50 absolute right-1 mt-8 h-[150px] w-[100px] rounded-xl'>
         <div className='flex flex-col items-center justify-center h-full'>
-        <button>Login</button>
-        <p>OR</p>
-        <button>Signup</button>
+        <button type='click' className='flex items-center justify-center bg-orange-400 hover:bg-orange-900 text-white py-2 px-4 rounded h-8 w-[60px]'>Login</button>
+        <p className='font-bold text-slate-100'>OR</p>
+        <button type='submit' className='flex items-center justify-center bg-orange-400 hover:bg-orange-900 text-white py-2 px-4 rounded h-8 w-[60px]'>Signup</button>
         </div>
       </div>
     }

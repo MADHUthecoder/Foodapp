@@ -6,7 +6,8 @@ module.exports = {
       'primary': ['Berkshire Swash'],
       'secondary': ['Carattere'],
       'tertiary': ['Carter One'],
-      'title': ['Passion One']
+      'title': ['Passion One'],
+      'fourth':['Kalnia']
     },
   },
   plugins: [],
