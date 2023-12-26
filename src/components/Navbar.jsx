@@ -3,7 +3,7 @@ import {AiOutlineMenu, AiOutlineSearch} from "react-icons/ai"
 import { CgProfile } from "react-icons/cg";
 import { Link } from 'react-router-dom';
 import { TbFilterStar } from "react-icons/tb";
-
+import template from "../images/template.jpg"
 
 function Navbar() {
   const [filterPop, setFilterPop] = useState(false);
@@ -13,8 +13,9 @@ function Navbar() {
     {
       filterPop &&
       <div className='bg-[#000000]/60 z-10 w-full h-full fixed top-0 left-0 flex items-center justify-center'>
-        <div className='w-[200px] h-[300px] bg-[#f2d0a4] rounded-3xl flex flex-col items-center justify-center border-2 border-slate-600'>
+        <div className='w-[500px] h-[500px] bg-[#f2d0a4] rounded-3xl flex flex-col items-center justify-center border-2 border-slate-600'>
           <h1 className='cursor-pointer underline hover:text-red-500 flex py-0 px-3' onClick={() => setFilterPop(false)}>Close</h1>
+          <img src={template} alt='template' className='h-[200px] w-[300px] m-0 p-0 items-start'/>
         <div className='flex flex-col items-center'>
         <label className='text-[#d84242] font-bold'>Location</label>
         <select name="location" placeholder="Location" >

@@ -11,10 +11,8 @@ function Login() {
             <input type='text' placeholder='Enter Age' value='' required></input>
             <label className='font-bold'>Contact: </label>
             <input type='text' placeholder='Enter Contact' value='' required></input>
-            <label className='font-bold'>Door no: </label>
-            <input type='text' placeholder='Enter Address' value='' required></input>
-            <label className='font-bold'>Street name: </label>
-            <input type='text' placeholder='Enter Street name' value='' required></input>
+            <label className='font-bold'>Password: </label>
+            <input type='password' placeholder='Enter Password' value='' required></input>
             <label className='font-bold'>District: </label>
             <input type='text' placeholder='Enter District' value='' required></input>
             <label className='font-bold'>State: </label>

@@ -8,7 +8,7 @@ module.exports = {
       'tertiary': ['Carter One'],
       'title': ['Passion One'],
       'fourth':['Kalnia']
-    },
+    }, 
   },
   plugins: [],
 }
