@@ -11,7 +11,7 @@ import Signup from './pages/Signup';
 
 function App() {
   return (
-    <div className='bg-[#fff0d4] h-full'>
+    <div className='bg-[#fff0d4]'>
       <Navbar />
       <Routes>
           <Route path='/' element={<Pages />} />

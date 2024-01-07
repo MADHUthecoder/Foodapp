@@ -97,8 +97,8 @@ function Navbar() {
           <AiOutlineSearch size={30} className="justify-center" />
           <CgProfile onClick={() => setProfilePop(true)} size={30} />
           {profilePop && (
-            <div className="bg-[#000000]/50 absolute right-1 mt-8 h-[150px] w-[100px] rounded-xl">
-              <div className="flex flex-col items-center justify-center h-full">
+            <div className="bg-[#000000]/50 absolute z-[100] right-1 mt-8 h-[150px] w-[100px] rounded-xl">
+              <div className="flex flex-col items-center justify-center relative h-full z-[100]">
                 <Link to="/login"
                   type="click"
                   className="flex items-center justify-center bg-orange-400 hover:bg-orange-900 text-white py-2 px-4 rounded h-8 w-[60px]"
